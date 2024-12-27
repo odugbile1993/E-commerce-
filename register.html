@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to Global Connect</h1>
+        <p>Your one-stop shop for everything you need.</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    </header>
+
+    <section class="form-container">
+        <h2>Register</h2>
+        <form id="registration-form">
+            <label for="accountType">Register As:</label>
+            <select id="accountType" name="accountType" required>
+                <option value="">Select</option>
+                <option value="buyer">Buyer</option>
+                <option value="seller">Seller</option>
+            </select>
+
+            <!-- Common fields for both Buyer and Seller -->
+            <div id="common-fields">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="text" id="phone" placeholder="Phone Number" required>
+            </div>
+
+            <!-- Seller-specific fields (initially hidden) -->
+            <div id="seller-fields" style="display: none;">
+                <textarea id="businessDescription" placeholder="Business Description" required></textarea>
+                <input type="text" id="bankName" placeholder="Bank Name" required>
+                <input type="text" id="accountNumber" placeholder="Bank Account Number" required>
+                <label for="passportPhoto">Upload Passport Photograph:</label>
+                <input type="file" id="passportPhoto" accept="image/*" required>
+                <label for="itemImages">Upload Items to Sell:</label>
+                <input type="file" id="itemImages" accept="image/*" multiple required>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
