@@ -18,18 +18,15 @@
         </nav>
     </header>
 
-    <section class="dashboard-container">
-        <h2>Welcome, [User Name]</h2>
+    <section class="dashboard-container" id="dashboard">
+        <h2>Welcome, <span id="user-name">[User Name]</span></h2>
+        
         <div class="dashboard-content">
             <h3>Your Orders</h3>
-            <ul>
-                <li>Order #12345 - Status: Pending</li>
-                <li>Order #12346 - Status: Delivered</li>
-            </ul>
+            <div id="orders"></div>
+            
             <h3>Your Cart</h3>
-            <ul>
-                <li>Product: Mobile Phone - Price: $300</li>
-            </ul>
+            <div id="cart"></div>
         </div>
     </section>
 
